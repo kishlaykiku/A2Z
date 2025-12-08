@@ -5,6 +5,7 @@
 *****
 *****
 */
+
 public class Pattern1 {
 
     void solution(int n) {
