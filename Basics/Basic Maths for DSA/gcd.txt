@@ -1,0 +1,25 @@
+Euclidean Algorithm: GCD(a, b) = GCD(a-b, b), where a>b.
+
+Keep applying Euclidean Algo to keep on truncating the numbers until one of them becomes 0. In this case the other non zero number is the GCD of the original given two numbers.
+
+But there's a catch. For instance if a=52 and b=10 then we will have to perform a lot of subtraction to get the desired result.
+So instead of that we can find the modulo between a and b to skip subtracting multiple times.
+
+So 52%10 = 2. Therefore, GCD(2, 10).
+
+So the new algorithm is GCD(a, b) = GCD(a%b, b), where a>b.
+Go on until one of the nunber is 0.
+
+while(a>0 && b>0)
+{
+    if(a>b)
+        a = a%b;
+    else
+        b = b%a;
+}
+if(a == 0)
+    return b;
+else
+    return a;
+
+TL: O(logᵩ(min(a, b)))
