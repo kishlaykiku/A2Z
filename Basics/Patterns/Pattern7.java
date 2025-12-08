@@ -17,7 +17,7 @@ public class Pattern7 {
             for(int j = n-1; j > i; j--) System.out.print(" ");
 
             // Stars
-            for(int k = 0; k < (i*(n-3))+1; k++) System.out.print("*");
+            for(int k = 0; k < (i*2)+1; k++) System.out.print("*");
 
             // Space
             for(int l = n-1; l > i; l--) System.out.print(" ");

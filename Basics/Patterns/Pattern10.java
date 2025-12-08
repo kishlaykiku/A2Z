@@ -15,9 +15,10 @@ public class Pattern10 {
     void solution(int n) {
 
         int stars = 0;
+
         for(int i = 0; i < (n*2)-1; i++) {
 
-            if(i >= 5) stars--;
+            if(i >= n) stars--;
             else stars++;
 
             for(int j = 0; j < stars; j++) System.out.print("*");
