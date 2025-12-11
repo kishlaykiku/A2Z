@@ -4,7 +4,7 @@
 *  *
 ****
 Print `*` for first and last row or first and last column ---|
-[Boundary Cases: {i = 1}, {i = n-1}, {j = 1}, {j = n-1}] <---|
+[Boundary Cases: {i = 0}, {i = n-2}, {j = 0}, {j = n-2}] <---|
 */
 
 public class Pattern21 {
