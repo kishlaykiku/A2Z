@@ -7,7 +7,7 @@
 4 3 3 3 3 3 4        0 1 1 1 1 1 0
 4 4 4 4 4 4 4        0 0 0 0 0 0 0
 
-The idea here is that, we take the minimum distance of an element from all four sides and subtract that number with `n` (here 4)
+The idea here is that, we take the minimum distance of an element from all four sides and subtract that number from `n` (here 4)
 https://youtu.be/tNm_NNSB3_w?si=8_otZqU2cidSzIsW&t=4540
 */
 
