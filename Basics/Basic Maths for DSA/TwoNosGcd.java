@@ -8,7 +8,7 @@ Example 1 =>
         Factors of 9: 1, 3, 9
         Factors of 12: 1, 2, 3, 4, 6, 12
         Common Factors: 1, 3
-        Greatest common factor: 3 (GCD)
+        Greatest common factor: 3(GCD)
 
 Example 2 =>
     Input: N1 = 20, N2 = 15
@@ -17,7 +17,7 @@ Example 2 =>
         Factors of 20: 1, 2, 4, 5, 10, 20
         Factors of 15: 1, 3, 5, 15
         Common Factors: 1, 5
-        Greatest common factor: 5 (GCD)
+        Greatest common factor: 5(GCD)
 */
 
 import java.util.Scanner;

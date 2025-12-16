@@ -4,7 +4,7 @@ Problem Statement: Given an integer N, return the number of digits in N.
 Example =>
     Input: N = 12345
     Output: 5
-    Explanation:  The number 12345 has 5 digits.
+    Explanation: The number 12345 has 5 digits.
 */
 
 import java.util.Scanner;
