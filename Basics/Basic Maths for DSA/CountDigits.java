@@ -29,6 +29,7 @@ public class CountDigits {
 
         CountDigits obj = new CountDigits();
         int n = sc.nextInt();
+        sc.close();
 
         n = Math.abs(n);
         int output = obj.solution(n);

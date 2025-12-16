@@ -16,7 +16,6 @@ public class ReverseDigits {
 
     public static Scanner sc = new Scanner(System.in);
 
-
     int solution(int n) {
 
         int reverse = 0;
@@ -26,6 +25,7 @@ public class ReverseDigits {
             n = n/10;
             reverse = reverse*10 + lastDigit;
         }
+
         return reverse;
     }
 
@@ -33,6 +33,7 @@ public class ReverseDigits {
 
         ReverseDigits obj = new ReverseDigits();
         int n = sc.nextInt();
+        sc.close();
 
         int output = obj.solution(n);
         System.out.print(output);

@@ -28,11 +28,12 @@ public class TwoNosGcd {
 
     int solution(int a, int b) {
 
+        a = Math.abs(a);
+        b = Math.abs(b);
         int gcd = 1;
 
         // Optimized [Euclidean Algorithm]
         while(a != 0 && b != 0) {
-
             if(a>b) a = a%b;
             else b = b%a;
         }
@@ -54,6 +55,7 @@ public class TwoNosGcd {
         TwoNosGcd obj = new TwoNosGcd();
         int a = sc.nextInt();
         int b = sc.nextInt();
+        sc.close();
 
         int output = obj.solution(a, b);
         System.out.print(output);
