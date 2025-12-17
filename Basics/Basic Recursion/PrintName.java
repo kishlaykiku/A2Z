@@ -1,5 +1,5 @@
 /*
-Problem Statement: Given an integer N, write a program to print your name N times.
+Problem Statement: Given an integer 'N', write a program to print your name N times.
 Example =>
     Input: N = 3
     Output: Kishlay Kishlay Kishlay
@@ -10,6 +10,7 @@ public class PrintName {
 
     void solution(int n, String name) {
 
+        n = Math.abs(n);
         int count = 0;
         recursiveNameDisplay(count, n, name);
     }
