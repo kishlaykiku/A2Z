@@ -1,5 +1,5 @@
 /*
-Problem Statement: Count the frequency of numbers
+Problem Statement: Count the frequency of numbers [N cannot exceed 12]
 
 Example =>
     Input: S = 5 || arr[S] = {1, 3, 2, 1, 3} || INP = 5 || N = 1, 4, 2, 3, 12
@@ -15,11 +15,10 @@ public class NumMapTraditional {
 
     int solution(int nFreq, int[] arr) {
 
-        int[] freq = new int[100000000]; // Max Size: 10^8 [Local] || 10^9 [Global]
+        int[] freq = new int[13];
 
         for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == nFreq)
-                freq[nFreq]++;
+            freq[arr[i]]++;
         }
 
         return freq[nFreq];
