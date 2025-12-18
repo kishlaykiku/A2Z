@@ -5,7 +5,7 @@ More precisely N! = N*(N-1)*(N-2) … 1.
 
 Note: N is always a positive number.
 
-Example 1 =>
+Example =>
     Input: N = 5
     Output: 120
     Explanation: 5! = 5*4*3*2*1
