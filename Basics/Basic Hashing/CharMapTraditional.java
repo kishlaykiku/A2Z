@@ -37,5 +37,6 @@ public class CharMapTraditional {
             if(i < inpSize-1)
                 System.out.print(" ");
         }
+        sc.close();
     }
 }
