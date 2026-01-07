@@ -9,7 +9,7 @@ Example =>
 
 import java.util.Scanner;
 import java.util.Map;
-import java.util.TreeMap;
+import java.util.HashMap;
 
 public class NumMapModern {
 
@@ -17,7 +17,7 @@ public class NumMapModern {
 
     Map<Integer, Integer> preCompute(int arr[], int arrSize) {
 
-        Map<Integer, Integer> freq = new TreeMap<>(); // Ordered Map
+        Map<Integer, Integer> freq = new HashMap<>(); // Unordered Map
 
         for(int i = 0; i < arrSize; i++) {
             freq.put(arr[i], freq.getOrDefault(arr[i], 0) + 1);
