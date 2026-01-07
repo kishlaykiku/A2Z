@@ -8,15 +8,16 @@ Example =>
 */
 
 import java.util.Scanner;
+import java.util.Map;
 import java.util.HashMap;
 
 public class NumMapModern {
 
     private static Scanner sc = new Scanner(System.in);
 
-    HashMap<Integer, Integer> preCompute(int arr[], int arrSize) {
+    Map<Integer, Integer> preCompute(int arr[], int arrSize) {
 
-        HashMap<Integer, Integer> freq = new HashMap<>();
+        Map<Integer, Integer> freq = new HashMap<>();
 
         for(int i = 0; i < arrSize; i++) {
             freq.put(arr[i], freq.getOrDefault(arr[i], 0) + 1);
@@ -35,7 +36,7 @@ public class NumMapModern {
             arr[i] = sc.nextInt();
         }
 
-        HashMap<Integer, Integer> result = obj.preCompute(arr, arrSize);
+        Map<Integer, Integer> result = obj.preCompute(arr, arrSize);
 
         int inpSize = sc.nextInt();
 

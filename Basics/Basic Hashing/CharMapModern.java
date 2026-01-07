@@ -8,15 +8,16 @@ Example =>
 */
 
 import java.util.Scanner;
+import java.util.Map;
 import java.util.HashMap;
 
 public class CharMapModern {
 
     private static Scanner sc = new Scanner(System.in);
 
-    HashMap<Character, Integer> preCompute(String str) {
+    Map<Character, Integer> preCompute(String str) {
 
-        HashMap<Character, Integer> freq = new HashMap<>();
+        Map<Character, Integer> freq = new HashMap<>();
 
         for(int i = 0; i < str.length(); i++) {
             freq.put(str.charAt(i), freq.getOrDefault(str.charAt(i), 0)+1);
@@ -31,7 +32,7 @@ public class CharMapModern {
         String str = sc.nextLine();
         int inpSize = sc.nextInt();
 
-        HashMap<Character, Integer> result = obj.preCompute(str);
+        Map<Character, Integer> result = obj.preCompute(str);
 
         for(int i = 0; i < inpSize; i++) {
             char cFreq = sc.next().charAt(0);
