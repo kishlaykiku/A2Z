@@ -1,9 +1,9 @@
 /*
-In Insertion Sort, we take an element and place it in the correct order.
+In Insertion Sort, we take an element and place it in the correct order by shifting.
 Time Complexity =>
-    Best: 
-    Average: 
-    Worst: 
+    Best: O(n)
+    Average: O(n^2)
+    Worst: O(n^2)
 */
 
 import java.util.Scanner;
@@ -16,6 +16,15 @@ public class InsertionSort {
 
     void solution(List<Integer> arr) {
 
+        for(int i = 0; i < arr.size()-1; i++) {
+            int key = arr.get(i+1);
+            int j = i;
+            while(j >= 0 && key < arr.get(j)) {
+                arr.set(j+1, arr.get(j));
+                j--;
+            }
+            arr.set(j+1, key);
+        }
     }
 
     public static void main(String args[]) {
