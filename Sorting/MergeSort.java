@@ -1,9 +1,9 @@
 /*
-
+In Merge Sort, we divide the array into halves recursivley and then merge the sorted halves.
 Time Complexity =>
-    Best: 
-    Average: 
-    Worst: 
+    Best: O(n log n)
+    Average: O(n log n)
+    Worst: O(n log n)
 */
 
 import java.util.Scanner;
@@ -16,6 +16,50 @@ public class MergeSort {
 
     void solution(List<Integer> arr) {
 
+        int low = 0;
+        int high = arr.size()-1;
+        mergeSort(arr, low, high);
+    }
+
+    void mergeSort(List<Integer> arr, int low, int high) {
+
+        if(low >= high) return;
+        int mid = (low + (high - low))/2;
+
+        mergeSort(arr, low, mid);
+        mergeSort(arr, mid+1, high);
+        merge(arr, low, mid, high);
+    }
+
+    void merge(List<Integer> arr, int low, int mid, int high) {
+
+        List<Integer> temp = new ArrayList<>();
+        int left = low;
+        int right = mid+1;
+
+        while(left <= mid && right <= high) {
+            if(arr.get(left) <= arr.get(right)) {
+                temp.add(arr.get(left));
+                left++;
+            } else {
+                temp.add(arr.get(right));
+                right++;
+            }
+        }
+
+        while(left <= mid) {
+            temp.add(arr.get(left));
+            left++;
+        }
+
+        while(right <= high) {
+            temp.add(arr.get(right));
+            right++;
+        }
+
+        for(int i = low; i <= high; i++) {
+            arr.set(i, temp.get(i - low));
+        }
     }
 
     public static void main(String args[]) {
